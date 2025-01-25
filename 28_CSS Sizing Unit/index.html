@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing Unit</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            /* root size */
+            font-size: 12px;
+        }
+
+        .box {
+            text-align: center;
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 250px; If we use pixel , it will be fixed  so as the viewing screen changes the apperance will be Ugly.So here we will use vw*/
+            width: 50vw;
+            /* Margin auto will be applied only to Inline Elements.bcoz Block element does not support width change eg span */
+            margin: auto;
+            color: red;
+            background-color: yellow;
+            height: 10vh;
+        }
+
+        .container {
+            width: 50vw;
+            box-sizing: border-box;
+            border: 2px solid black;
+            margin: 23px auto;
+            color: blue;
+            background-color: white;
+            /* height: 20vh; */
+            font-size: 10px;
+            min-height: 80vh;
+        }
+
+        /* em changes the inherited font size to font size * no of ems */
+        .container p {
+            /* font-size: 2em; */
+            font-size: 2rem;
+            /* rem basically changes the root element size * no of rems */
+        }
+
+        .mycont {
+            text-align: center;
+            margin: 23px auto;
+            box-sizing: border-box;
+            border: 2px solid black;
+            background-color: red;
+            color: blanchedalmond;
+            font-size: 22px;
+            width: 50vw;
+            /* vmin is vh in case of my screen 
+            instaed of vmin i can write vh also in my case*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        This is a Box
+    </div>
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, accusantium. Blanditiis illo hic laborum.
+            Harum dignissimos iure aut quas optio nemo saepe, in quasi minus.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad porro impedit, minima fugit quas deserunt autem
+            dolorum sint cupiditate molestiae quae debitis dolor iure? Accusamus illum ea laudantium perspiciatis nam
+            necessitatibus dolor sequi magnam at, exercitationem optio facilis eos nemo nesciunt facere repellat quo,
+            eligendi minima possimus corporis vel atque. Eius placeat porro aliquid numquam tenetur distinctio non et
+            provident vel quasi eaque, aspernatur officiis incidunt at dignissimos neque architecto est error hic, vero
+            aut odio recusandae quos nostrum? Blanditiis, et a quidem veritatis deserunt, quos alias natus odio
+            dignissimos ipsam unde corrupti, minus atque quaerat esse ipsum! Hic, itaque?
+        </p>
+    </div>
+    <div class="mycont">
+        This is another Container..!
+    </div>
+</body>
+
+</html>
