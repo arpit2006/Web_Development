@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Float and Color</title>
+    <style>
+        .cards {
+            border: 2px solid black;
+            display: flow-root;
+            /* We can fit element within the containe */
+        }
+
+        img {
+            float: right;
+            /* It will float at left and allow text to come at right side */
+        }
+
+        .card {
+            border: 2px solid red;
+        }
+
+        .card:nth-child(3) {
+            background-color: aqua;
+            clear: right;
+            /* It does not allow any element to flow at their right side */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="" width="230px">
+
+        <div class="card">Card 1</div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minima pariatur voluptas
+            accusantium quam, repellat distinctio quidem at inventore perferendis a deserunt quo itaque non reiciendis
+            atque omnis facilis. Inventore libero nihil ea voluptatem tempora, harum dolorum ratione ipsa alias quasi
+            numquam id quia quisquam ipsum obcaecati excepturi atque aut nisi minima neque doloribus. Ullam nihil harum
+            earum. Temporibus soluta doloribus enim quaerat earum amet asperiores minima, sequi necessitatibus ut
+            ratione aperiam molestiae! Voluptates dolore molestiae unde cupiditate quasi dicta fugiat, velit quam
+            maiores odio est tempora voluptatum neque pariatur necessitatibus quod odit? Quam est rerum doloremque
+            ratione voluptatibus. Debitis magnam adipisci corrupti non itaque eveniet eius fugiat laudantium! Odio, ad
+            id. Blanditiis, ratione! Ipsa recusandae illo aperiam unde ullam voluptatibus tempora debitis, voluptatem
+            beatae maiores iure sapiente ea reprehenderit! Quasi veritatis vero magnam rem sit eaque, possimus est
+            tempora reiciendis sapiente molestias, ad quia reprehenderit voluptatem? Odio laborum consequatur ducimus
+            corporis animi quas fuga, harum vel quaerat voluptatem possimus tenetur quam eligendi deserunt
+            exercitationem non cum est cupiditate ratione iusto rerum nihil. Distinctio, incidunt accusamus mollitia
+            quas dolore nemo enim debitis tenetur beatae, vel praesentium recusandae, voluptas quidem doloribus ea atque
+            assumenda officiis! Vel, officia tenetur voluptatibus deleniti obcaecati ipsa repellat fugiat. Libero
+            consectetur eveniet eos id aperiam doloremque assumenda sed quos atque veniam quaerat minus, quo alias.
+            Excepturi odio sint ullam quidem omnis reiciendis, nobis quae unde dignissimos illo voluptates asperiores,
+            veniam aut facere officia, voluptatibus quod quasi facilis. Labore voluptas modi, quod nihil aliquam
+            praesentium atque sit quas incidunt fugit consequatur dolor numquam reiciendis sapiente a delectus quos
+            beatae assumenda, reprehenderit enim sequi adipisci natus vel animi? Expedita aut sapiente labore recusandae
+            distinctio, debitis quod optio vero numquam dolore eum obcaecati soluta, excepturi deleniti ducimus
+            pariatur, officia a! Quam ad maiores neque atque, aliquid ullam? Facere praesentium placeat accusamus
+            temporibus veniam vel voluptatum. Labore, recusandae. Repellat blanditiis dicta eveniet maiores? Nisi,
+            delectus iste aut excepturi provident tempora fuga est consectetur voluptate aspernatur nesciunt dolor,
+            beatae consequatur placeat illum quo sed autem harum esse voluptatem eligendi. Dolorum nemo aut eligendi
+            perferendis iusto quae voluptatem repudiandae quisquam, delectus neque esse placeat, nulla libero repellat
+            quia minima, vero explicabo? Excepturi ipsa non accusantium unde molestias eligendi aperiam, sint id aut
+            suscipit cum nobis! Ea iste nulla quae quos culpa neque sapiente, nemo delectus similique modi itaque,
+            adipisci distinctio odit est molestias? Ab iure fugit libero inventore architecto, eligendi praesentium
+            atque.</div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+
+</html>

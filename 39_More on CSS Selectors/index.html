@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: rosybrown;
+        } */
+        /* .box::first-line{
+            color: yellow;
+        } */
+        /* .boxes *{
+            /* * For all element in box */
+            /* color: blue;
+            border: 2px solid black;
+        }
+        /* Grouping */
+        /* p,a,.box, [data-color = "primary"]{ */
+            /* Attribute selector */
+            /* margin-top: 45px; */
+        /* } */ 
+        /* .box:nth-child(even){
+            background-color: aquamarine;
+        } */
+        .box:nth-last-child(1){
+            background-color: bisque;
+        }
+        /* .boxes::before{
+            content: "Jey How are you";
+            /* It is inserted before the text this is calle dynamically insertion */
+        /* }  */
+        .boxes::after{
+            content: "Hey GoodyBye";
+            /* text is inserted after the text */
+        }
+        ::selection{
+            color: aquamarine;
+            background-color: black;
+            /* Selection color for page completly */
+        }
+        .box::first-letter{
+            color: peru;
+            /* Box first letter is converted into peru color */
+        }
+        input::placeholder{
+            color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box"> I am Box</div>
+        <div class="box">Hey I am a Box</div>
+        <div class="box">Hey I am a Box</div>
+        <div>
+        <input type="text" placeholder="Type Your name">
+    </div>
+    </div>
+</body>
+</html>
