@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforms</title>
+    <style>
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: beige;
+            border: 2px solid black;
+            /* transform: rotate(90deg); */
+            /* transform: rotateZ(40deg); */
+            /* transform: scaleX(1.6); */
+            /* transform: scale3d(1.6); */
+            /* transform: skew(4deg); */
+            /* Pull the object does not apply in z axis */
+            transform: translateX(34px);
+            /* transform: translateX(100%) skew(40deg) translateX(45%); */
+            /* Translate x time the widskth.x = 34 so translate 34 times (X,Y) */
+            /* Translate used when we have to hide something
+             */
+            transform: rotate(55deg);
+            transform-origin: 0 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">BOx</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS Animation</title>
+    <style>
+        .container{
+            background-color:chocolate;
+            height: 80vh;
+            width: 30vw;
+
+        }
+        .box{
+            width: 34px;
+            height: 45px;
+            /* background-color: aqua; */
+            /* animation: identifier;
+            animation-duration: 3s;
+            animation-iteration-count: 5;
+            animation-timing-function: cubic-bezier(0, 0.41, 0.84, 0.91);
+            animation-delay: 1s;
+            /* animation-direction: alternate-reverse; */
+            /*animation-play-state: paused; */
+            animation:  identifier 3s 3 ease-in-out,
+                        identifier1 5s 3 ease-out;
+                        
+            /* after completing animation it will stop there only  */
+            
+        }
+        /* for animation */
+        @keyframes identifier {
+            from{
+                background-color: red;
+                
+
+            }
+            to{
+                transform: translateX(1000px);
+                background-color: blue;
+
+            }
+            
+        }
+        @keyframes identifier1 {
+            0%{
+                transform: rotate(100deg);
+            }
+            15%{
+                transform: rotate(75deg);
+            }
+            25%{
+                transform: rotate(55deg);
+            }
+            35%{
+                transform: rotate(45deg);
+            }
+            50%{
+                transform: rotate(25deg);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+</body>
+</html>
