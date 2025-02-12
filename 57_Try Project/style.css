@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+    
+}
+main{
+    position: sticky;
+    top: 0;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    gap: 400px;
+    padding: 15px;
+    /* border: 2px solid black; */
+    box-shadow: 2px 2px 2px 2px whitesmoke;
+    background-color:  white;
+}
+
+.logo{
+    width: 230px;
+    height: 40px;
+    top: 0px;
+    cursor: pointer;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    margin: 13px;
+    
+}
+
+div > ul li {
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    
+    
+}
+
+
+.login {
+    border: 2px solid black;
+    border-radius: 100px;
+    padding: 6px;
+    margin: -12px;
+    cursor: pointer;
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+    font-size: larger;
+    color: black;
+    display: flex;
+    padding: 4px;
+    cursor: pointer;
+}
+.navbar2{
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 5px;
+    padding: 10px;
+    background-color:whitesmoke ;
+}
+section div img{
+    width: 300px;
+    height: 472px;
+    margin: 129px;
+    position: fixed;
+    margin-left: 162px;
+    top: 127px;
+    border-radius: 10px;
+}
+

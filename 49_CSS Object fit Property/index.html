@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-Fit and position</title>
+    <style>
+        .container {
+            height: 488px;
+            width: 466px;
+            border: 2px solid black;
+            background-color: aqua;
+        }
+        img{
+            width: 466px;
+            height: 488px;
+            
+            /* object-fit: cover; */
+            
+            /* object fit fits the image in the height and width provided sothat its resolution does not affect it will acquire anyhow  */
+            /* it does not depend on parent it depend upon the heught and width provided to image */
+
+            /* object-position: top right; */
+            /* Shows the top right portion of the image */
+
+            /* object-fit: contain; */
+            /* it will display the image ewith spaces */
+
+            /* object-fit: fill; */
+            /* it will acquire complete image but the image will be distorted */
+
+            /* object-fit: scale-down; */
+            /* it will display same as contain */
+
+            object-position: 10px 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <img src="picture.png" alt="">
+
+    </div>
+</body>
+
+</html>

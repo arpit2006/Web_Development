@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selectors */
+        /* Here if we created another div so it it will also take the color from style.That is why we use selectors */
+        /* div{
+             /* background-color: yellow;} */
+
+        /* Class Selectors */
+        .red {
+            background-color: red;
+        }
+
+        /* ID selectors */
+        #yellow {
+            background-color: goldenrod;
+        }
+
+        /* Child Selector */
+        div>p {
+            background-color: greenyellow;
+        }
+
+        /* Decendent Selectors */
+        div p {
+            background-color: yellow;
+            color: red;
+        }
+
+        /* Universal Selectors */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selectors */
+        a:visited {
+            /* Visited Link */
+            color: blue;
+        }
+
+        a:link {
+            /* Not visited link */
+            color: blueviolet;
+        }
+
+        a:active {
+            /* While Clicking Background color */
+            background-color: red;
+        }
+
+        a:hover {
+            /* While hovering */
+            background-color: palevioletred;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="red">
+        I am DIV..!
+        <article>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </article>
+    </div>
+    <div id="yellow">Heyy
+    </div>
+    <div>
+        <a href="https://google.com">Open Google </a>
+        <a href="https://youtube.com">Open Youtube </a>
+    </div>
+    </div>
+</body>
+
+</html>

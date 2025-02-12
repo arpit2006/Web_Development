@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root {
+            /* global declaration is done by :root */
+            /* global declaration */
+            --color: blue;
+            --seccolor: green;
+            --defpad: 10px;
+            --defop: 0.2;
+            --defmargin: 10px;
+        }
+        
+
+        * {
+            /* margin: 0; */
+            margin: var(--defmargin);
+            padding: 0;
+        }
+
+        .nav {
+            background-color: var(--color);
+            /* to use global declaration var() */
+        }
+
+        ul li {
+            /* opacity: 0.3; */
+            opacity: var(--defop);
+            list-style: none;
+            /* padding: 34px; */
+            padding: var(--defpad);
+            border: 20px solid var(--seccolor);
+        }
+
+        ul {
+            display: flex;
+
+        }
+
+        .container {
+            background-color: var(--seccolor);
+        }
+
+        ul li:first-child {
+            /* local variable */
+            --color: rgb(70, 220, 6);
+            background-color: var(--color, blue);
+            /* if variable not found so blue colour will be used */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aliquam quae autem dicta dolor quasi obcaecati
+        dolores, magni, qui, beatae unde ut? Voluptate soluta, maiores deserunt totam voluptates vero quisquam quaerat.
+        Quidem dolores aperiam aspernatur dolor nesciunt neque harum, eligendi vel corrupti incidunt fugiat ratione.
+    </div>
+    <div>
+        CSS variable is used here.
+        It can store variable,string,number and may more.
+    </div>
+</body>
+
+</html>
