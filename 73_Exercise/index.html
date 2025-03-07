@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: green;
+            font-size: 30px;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div>Initializing Hacking...</div>
+    <script> const additems = async (item) => {
+        await randdelay();
+        let div = document.createElement("div");
+        div.innerHTML = item;
+        document.body.append(div)
+    }
+
+        const randdelay = () => {
+            return new Promise((resolve, reject) => {
+                timeout = 1 + 6* Math.random();
+                setTimeout(() => {
+                    resolve()
+                }, timeout * 1000);
+            })
+
+        }
+
+        let text = [
+            "Hacking Initialize...",
+            "Connecting to the server......",
+            "Downloading the data...",
+            "Uploading the data...",
+            "Data has been uploaded...",
+            "Hacking Complete...",
+            "Cleaning up the system..."
+        ]
+        for (const item of text) {
+            additems(item);
+        }
+
+        
+
+    </script>
+</body>
+
+</html>

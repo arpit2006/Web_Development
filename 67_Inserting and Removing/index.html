@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Hey I am a box</div>
+    </div>
+    <script>
+        // let div = document.createElement("div");
+        // div.innerHTML = "Hey I am Inserted <b> By Arpit </b>"
+        // div.setAttribute("class","created");
+        // document.querySelector(".container").append(div)
+        // //Whenever we use append the element is appended at last
+
+        let cont = document.querySelector(".container")
+        cont.insertAdjacentHTML("afterend","I am under the Water")
+        
+    </script>
+</body>
+</html>
